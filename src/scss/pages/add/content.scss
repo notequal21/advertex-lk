@@ -1,0 +1,149 @@
+.add {
+  margin: 35px 0 0;
+
+  &__title {
+  }
+
+  &__subtitle {
+    margin: 10px 0 0;
+
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #021751;
+
+    a {
+      text-decoration-line: underline;
+      color: #9914b3;
+
+      &:hover {
+        text-decoration-line: none;
+      }
+    }
+  }
+  &-amount {
+    margin: 10px auto 0;
+
+    input,
+    textarea {
+      font-size: 20px !important;
+      line-height: 25px !important;
+    }
+  }
+  &-field {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    max-width: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22.5px 30px;
+    border-bottom: 1px solid #dbe0e5;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 4px;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    ._error-name {
+      display: none;
+      color: #e97676;
+      font-family: Source Sans Pro;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: left;
+    }
+
+    &._success {
+      border-bottom: 1px solid #3bb865;
+
+      &::after {
+        background-image: url(../img/icons/check.svg);
+      }
+    }
+
+    &._error {
+      border-bottom: 1px solid #e97676;
+      padding: 22.5px 30px 14.5px;
+      align-items: flex-end;
+
+      ._error-name {
+        display: block;
+      }
+
+      &::after {
+        top: calc(50% + 12px);
+        background-image: url(../img/icons/err.svg);
+      }
+    }
+
+    input,
+    textarea {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__name {
+      flex: 0 0 245px;
+      font-family: 'Source Sans Pro';
+      font-size: 16px;
+      line-height: 20px;
+      color: #41517c;
+    }
+
+    &__input {
+      width: 100%;
+      margin: 0 0 0 10px;
+      background-color: transparent;
+
+      font-family: 'Source Sans Pro';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      color: #021751;
+    }
+
+    span {
+      font-family: 'Source Sans Pro';
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #41517c;
+    }
+  }
+  &-body {
+    width: 100%;
+    max-width: 690px;
+    margin: 25px auto 0;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+
+    &__title {
+      font-family: 'Source Sans Pro';
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+      text-align: center;
+      color: #021751;
+    }
+
+    &__field {
+      margin: 19px 0 0;
+    }
+  }
+}

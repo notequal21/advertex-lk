@@ -1,0 +1,59 @@
+<section class="payment">
+  <div class="container">
+    <div class="payment-body">
+      <div class="payment-body__title">Select Payment Method</div>
+      <div class="payment-body__content">
+        <label class="payment-body__item">
+          <div class="payment-body__item-top">
+            <input checked type="radio" name="payment-type">
+            <div class="payment-body__item-radio"></div>
+            <div class="payment-body__item-logo">
+              <img src="./img/payment/mamo.svg" alt="">
+            </div>
+            <div class="payment-body__item-warn">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.4756" cy="10" r="9.16667" stroke="#9914B3" stroke-width="1.5" />
+                <path d="M10.4756 5.83334V10" stroke="#9914B3" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M10.4756 13.3333V13.75" stroke="#9914B3" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+              Minimum Amount 2$
+            </div>
+            <div class="payment-body__item-by">
+              <span class="_label">Pay by:</span>
+              <span class="_list">
+                <img src="./img/payment/visa.svg" alt="">
+                <img src="./img/payment/ms.svg" alt="">
+              </span>
+            </div>
+          </div>
+        </label>
+        <label class="payment-body__item">
+          <div class="payment-body__item-top">
+            <input checked type="radio" name="payment-type">
+            <div class="payment-body__item-radio"></div>
+            <div class="payment-body__item-logo">
+              <img src="./img/payment/stripe.svg" alt="">
+            </div>
+
+            <div class="payment-body__item-by">
+              <span class="_label">Pay by:</span>
+              <span class="_list">
+                <img src="./img/payment/visa.svg" alt="">
+                <img src="./img/payment/ms.svg" alt="">
+              </span>
+            </div>
+          </div>
+          <div class="payment-body__item-inputs">
+            <input type="text" placeholder="Card Number" class="_card-number">
+            <input type="text" placeholder="Expiration" class="_card-exp">
+            <input type="password" placeholder="CVC" class="_card-cvc">
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="payment__btn btn btn_big">Add Funds</div>
+  </div>
+</section>

@@ -1,0 +1,142 @@
+.stats {
+  margin: 35px 0 0;
+
+  &-body {
+    margin: 25px 0 0;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+  }
+
+  &-date {
+    display: flex;
+
+    &__input {
+      cursor: pointer;
+      flex: 0 1 auto;
+      padding: 0 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #dbe0e6;
+
+      &:not(:first-child) {
+        margin: 0 0 0 30px;
+      }
+
+      input {
+        display: inline-block;
+        width: 84px;
+        margin: 0 0 0 10px;
+
+        font-family: 'Source Sans Pro';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #021751;
+
+        &::placeholder {
+          color: #021751;
+        }
+      }
+
+      ._label {
+        font-family: 'Source Sans Pro';
+        font-size: 16px;
+        line-height: 20px;
+        color: #41517c;
+      }
+      ._ico {
+        margin: 0 0 4px 10px;
+        width: 20px;
+        height: 20px;
+      }
+
+      &_from {
+      }
+      &_to {
+      }
+    }
+    &__btn {
+      margin: 0 0 0 30px;
+    }
+  }
+
+  &-legend {
+    margin: 4px 0 0;
+    display: flex;
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      font-family: 'Source Sans Pro';
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 21px;
+      color: #021751;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        margin: 0 10px 0 0;
+        background: #9914b3;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &-chart {
+    margin: 10px 0 0;
+    position: relative;
+
+    &__item {
+      .apexcharts-tooltip {
+        border: none !important;
+        background: #021751 !important;
+        border-radius: 5px !important;
+        box-shadow: none !important;
+
+        font-family: 'Source Sans Pro' !important;
+        font-weight: 700 !important;
+        font-size: 18px !important;
+        line-height: 23px !important;
+        color: #ffffff !important;
+
+        .apexcharts-tooltip-text-y-value,
+        .apexcharts-tooltip-text-y-label {
+          font-family: 'Source Sans Pro' !important;
+          font-weight: 700 !important;
+          font-size: 18px !important;
+          line-height: 23px !important;
+          color: #ffffff !important;
+        }
+
+        &-series {
+          &-group {
+            padding: 0 30px !important;
+          }
+        }
+
+        &-marker {
+          display: none;
+        }
+      }
+
+      &-line {
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+
+        .apexcharts-xaxis-label,
+        .apexcharts-yaxis-label {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  padding: 0 40px;
+  background: linear-gradient(87.22deg, #9914b3 0%, #7023bc 100%);
+  border-radius: 5px;
+
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  &:hover {
+    background: #9914b3;
+  }
+
+  &_big {
+    height: 65px;
+    padding: 0 80px;
+  }
+}
+
+.title {
+  font-family: 'Source Sans Pro';
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 75px;
+  text-align: center;
+  color: #021751;
+}

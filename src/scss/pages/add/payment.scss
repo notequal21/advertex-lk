@@ -1,0 +1,154 @@
+.payment {
+  margin: 25px 0 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-body {
+    width: 100%;
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+
+    &__title {
+      font-family: 'Source Sans Pro';
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+      text-align: center;
+      color: #021751;
+    }
+
+    &__content {
+    }
+
+    &__item {
+      display: block;
+      margin: 20px 0 0;
+      padding: 20px;
+
+      background: #eff3f8;
+      border-radius: 20px;
+
+      input {
+        display: none;
+        &:checked + .payment-body__item-radio {
+          background: linear-gradient(87.22deg, #9914b3 0%, #7023bc 100%);
+        }
+      }
+
+      &-top {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+
+      &-inputs {
+        display: flex;
+        margin: 20px 0 0;
+
+        input {
+          width: 100%;
+          background: transparent;
+          display: block;
+          padding: 22.5px 30px;
+
+          font-family: 'Source Sans Pro';
+          font-size: 16px;
+          line-height: 20px;
+          color: #021751;
+
+          border-bottom: 1px solid #dbe0e5;
+
+          &:placeholder {
+            color: #41517c;
+          }
+
+          &:not(:first-child) {
+            margin: 0 0 0 20px;
+          }
+
+          &._card-number {
+            flex: 0 0 350px;
+          }
+          &._card-exp {
+            padding: 0 15px;
+            text-align: center;
+          }
+          &._card-cvc {
+            padding: 0 15px;
+            text-align: center;
+          }
+        }
+      }
+
+      &-radio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+
+        background: #dce2f0;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #ffffff;
+        }
+      }
+
+      &-logo {
+        margin: 0 auto 0 10px;
+      }
+
+      &-warn {
+        display: flex;
+        align-items: center;
+        font-family: 'Source Sans Pro';
+        font-size: 16px;
+        line-height: 20px;
+        color: #41517c;
+
+        svg,
+        img {
+          margin: 0 10px 0 0;
+        }
+      }
+
+      &-by {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 auto;
+
+        ._label {
+          font-family: 'Source Sans Pro';
+          font-size: 16px;
+          line-height: 20px;
+          color: #021751;
+        }
+
+        ._list {
+          display: flex;
+
+          img {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__btn {
+    margin: 25px auto 0;
+  }
+}

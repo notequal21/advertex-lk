@@ -1,0 +1,92 @@
+// -------- imports --------
+@import 'fonts';
+@import 'components/_fonts';
+@import 'components/_normalize.scss';
+@import 'components/_mixins.scss';
+@import 'components/_variables.scss';
+@import 'components/_variables.scss';
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+@import 'components/_ui.scss';
+@import 'pages/index/_table.scss';
+@import 'pages/index/_stats.scss';
+@import 'pages/add/content.scss';
+@import 'pages/add/payment.scss';
+@import 'pages/profile/content.scss';
+
+@import 'components/flatpicker';
+@import 'components/custom-flatpicker';
+
+::selection {
+}
+
+body {
+  background: #eff3f8;
+}
+
+.container {
+  max-width: 1870px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.history {
+  margin: 35px 0 0;
+}
+
+._sitemap {
+  height: 100vh;
+  padding: 50px 0;
+  background-color: rgb(58, 58, 58);
+
+  &-con {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 767px) {
+      padding: 0 50px;
+    }
+  }
+  &-body {
+    ol {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+
+        @media (max-width: 767px) {
+          font-size: 22px;
+        }
+
+        &:not(:first-child) {
+          margin: 15px 0 0;
+        }
+      }
+    }
+
+    &__item {
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        color: rgb(179, 203, 255);
+      }
+    }
+  }
+}
